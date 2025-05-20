@@ -28,5 +28,5 @@ pip install PyQt6 pyqtgraph
 
 ## ✅ Запуск
 ```bash
-python -m main
+python code/main.py
 ```

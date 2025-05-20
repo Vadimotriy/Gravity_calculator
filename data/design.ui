@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1168</width>
+    <height>958</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1168</width>
+    <height>958</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Сила тяготения</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(247, 248, 251);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QPushButton" name="pushButton">
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;PT Sans&quot;;
+border: 1px solid rgb(180, 180, 180);
+border-radius: 20px;
+background-color: rgb(214, 214, 214);
+padding-right: 100px;
+padding-left: 100px;</string>
+      </property>
+      <property name="text">
+       <string>Рассчитать</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Сила тяготения на высоте, Н</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLCDNumber" name="total_time">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;
+background-color: rgb(235, 235, 235);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="Line" name="line">
+        <property name="styleSheet">
+         <string notr="true">border: 2px solid #000;
+margin-top: 50px;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Введите массу, кг *</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Общее время падения, с</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLCDNumber" name="power">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;
+background-color: rgb(235, 235, 235);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="planet">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;PT Sans&quot;;
+text-decoration: underline;
+border: 1px solid  rgb(171, 171, 171);
+background-color: #FFF;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Выберите место *</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="height_n">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;PT Sans&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid  rgb(171, 171, 171);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="weight">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;PT Sans&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid  rgb(171, 171, 171);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Введите высоту, м</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Сила тяготения на поверхносте, Н</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLCDNumber" name="weight_n">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;
+background-color: rgb(235, 235, 235);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Максимальная скорость, м/c</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLCDNumber" name="max_speed">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;
+background-color: rgb(235, 235, 235);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="1" column="0">
+       <widget class="PlotWidget" name="speed">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="PlotWidget" name="length">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>График скорости</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;PT Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>График расстояния</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
